@@ -13,6 +13,10 @@ html {
 body {
     align-items: center;
     display: flex;
+<<<<<<< HEAD
+=======
+    flex-direction: column;
+>>>>>>> c88d3e821fde92dcdda2271ae373c9a9ffb947ae
     font-family: 'arya', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
