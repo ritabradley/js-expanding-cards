@@ -37,12 +37,26 @@ body {
     cursor: pointer;
     flex: 0.5;
     height: 80vh;
+    margin: 1em;
+    position: relative;
+    transition: flex 500ms ease-in;
 }
 
 .panel-heading {
     background-color: rgba(65, 182, 230, 0.8);
+    bottom: 2rem;
+    font-size: 2.2rem;
+    left: 2rem;
+    position: absolute;
+    opacity: 0;
+    right: 2rem;
+    transition: opacity 500ms ease-in;
 }
 
-.active {
+.panel.active {
     flex: 5;
+}
+
+.panel.active .panel-heading {
+    opacity: 1;
 }
