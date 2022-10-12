@@ -20,3 +20,29 @@ body {
     min-height: 100vh;
     overflow: hidden;
 }
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5rem;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    height: 80vh;
+}
+
+.panel-heading {
+    background-color: rgba(65, 182, 230, 0.8);
+}
+
+.active {
+    flex: 5;
+}
