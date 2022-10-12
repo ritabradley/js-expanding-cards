@@ -1,62 +1,73 @@
 @import url(https://fonts.bunny.net/css?family=arya:400,700);
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-    align-items: center;
-    display: flex;
-    font-family: 'arya', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    justify-content: center;
-    min-height: 100vh;
-    overflow: hidden;
+	align-items: center;
+	display: flex;
+	font-family: "arya", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	justify-content: center;
+	min-height: 100vh;
+	overflow: hidden;
 }
 
 .container {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 90vw;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 90vw;
 }
 
 .panel {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5rem;
-    color: #fff;
-    cursor: pointer;
-    flex: 0.5;
-    height: 80vh;
-    margin: 1em;
-    position: relative;
-    transition: flex 500ms ease-in;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5rem;
+	color: #fff;
+	cursor: pointer;
+	flex: 0.5;
+	height: 80vh;
+	margin: 1em;
+	position: relative;
+	transition: flex 500ms ease-in;
 }
 
 .panel-heading {
-    background-color: rgba(65, 182, 230, 0.8);
-    bottom: 2rem;
-    font-size: 2.2rem;
-    left: 2rem;
-    position: absolute;
-    opacity: 0;
-    right: 2rem;
-    transition: opacity 500ms ease-in;
+	background-color: rgba(65, 182, 230, 0.8);
+	bottom: 2rem;
+	font-size: 2.2rem;
+	left: 2rem;
+	opacity: 0;
+	position: absolute;
+	right: 2rem;
+	transition: opacity 500ms ease-in;
 }
 
 .panel.active {
-    flex: 5;
+	flex: 5;
 }
 
 .panel.active .panel-heading {
-    opacity: 1;
+	opacity: 1;
+}
+
+
+@media (max-width: 480px) {
+	.container {
+		width: 100vw;
+	}
+
+	.panel:nth-of-type(4), .panel:nth-of-type(5) {
+		display: none;
+	}
 }
